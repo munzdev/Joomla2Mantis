@@ -4,8 +4,8 @@
 	<version>2.6</version>
 	<creationDate>March 2016</creationDate>
 	<author>Thomas Munz</author>
-	<authorEmail>thomas.munz@sanhist-planspiel.at</authorEmail>
-	<authorUrl>http://www.sanhist-planspiel.at</authorUrl>
+	<authorEmail></authorEmail>
+	<authorUrl>https://github.com/munzili/Joomla2Mantis</authorUrl>
 	<copyright>2009-2016 Thomas Munz</copyright>
 	<license>GNU General Public License v2</license>
 	<description>Mantis Auto-Login. This plugin requires that the Manthis Joomla Login plugin is installed and properly configured in Mantis.

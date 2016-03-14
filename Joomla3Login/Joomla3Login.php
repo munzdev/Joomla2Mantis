@@ -21,8 +21,8 @@ class Joomla3LoginPlugin extends MantisPlugin
 		);
 
 		$this->author = 'Thomas Munz';         # Author/team name
-		$this->contact = 'thomas.munz@sanhist-planspiel.at';        # Author/team e-mail address
-		$this->url = 'www.sanhist-planspiel.at';            # Support webpage
+		$this->contact = '';        # Author/team e-mail address
+		$this->url = 'https://github.com/munzili/Joomla2Mantis';            # Support webpage
 	}
 	
 	function config()
