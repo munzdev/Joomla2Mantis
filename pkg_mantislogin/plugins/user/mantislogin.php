@@ -135,7 +135,7 @@ class plgUserMantisLogin extends JPlugin
 		
 		//-- something went wrong, stop it
 		if(!$success)
-			return $success;		
+			return $success;				
 		
 		# ok, we're good to login now
 		# increment login count
@@ -219,8 +219,7 @@ class plgUserMantisLogin extends JPlugin
 			$return_url_path = $url_informations['host'] . $url_informations['path'];
 		}
 		
-		if(($return && strpos($return_url_path, $str_mantis_url) === 0) ||
-		JUri::isInternal($return))
+		if($return)
 		{
 			// Redirect the user.
 			$app->redirect(JRoute::_($return, false));
@@ -258,6 +257,12 @@ class plgUserMantisLogin extends JPlugin
 		
 		// load Mantis core, allow us to use its API
 		require_once $str_mentis_path . 'core.php';
+		
+		require_once 'access_api.php';
+		require_once 'print_api.php';
+		require_once 'project_api.php';
+		require_once 'user_api.php';
+		require_once 'authentication_api.php';
 	}
 
 	/**
