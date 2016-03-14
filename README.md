@@ -35,6 +35,7 @@ A Single-Sign-On Bridge for Joomla 3 and Mantis Bug Tracker
 	
 ### Additional Config
 If Joomla and Mantis are running on different Subdomains, you need an extra config:
+
 1. Open the config_defaults_inc.php file in your Mantis directory
 2. Find the Option $g_cookie_domain
 3. Change it to the Top-level domain. Ex: If mantis is runnging at manits.website.com, change the variable to: website.com, so cookies can be set properly
