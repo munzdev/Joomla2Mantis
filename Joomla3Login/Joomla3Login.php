@@ -2,11 +2,6 @@
 
 if(defined('_JEXEC')) return;
 
-require_once 'print_api.php';
-require_once 'project_api.php';
-require_once 'user_api.php';
-require_once 'authentication_api.php';
-
 class Joomla3LoginPlugin extends MantisPlugin 
 {
 	function register() 
@@ -21,8 +16,8 @@ class Joomla3LoginPlugin extends MantisPlugin
 		);
 
 		$this->author = 'Thomas Munz';         # Author/team name
-		$this->contact = '';        # Author/team e-mail address
-		$this->url = 'https://github.com/munzili/Joomla2Mantis';            # Support webpage
+		$this->contact = 'thomas.munz@sanhist-planspiel.at';        # Author/team e-mail address
+		$this->url = 'www.sanhist-planspiel.at';            # Support webpage
 	}
 	
 	function config()
@@ -56,7 +51,7 @@ class Joomla3LoginPlugin extends MantisPlugin
 		   $this->begins_with($str_file, "signup") ||
 		   $this->begins_with($str_file, "lost") )
 		{
-			require_once 'access_api.php';
+			$this->loadFiles();
 			
 			$str_website_url = plugin_config_get('joomla_website');
 			$str_login_link = plugin_config_get('joomla_login_link');
@@ -67,7 +62,7 @@ class Joomla3LoginPlugin extends MantisPlugin
 		}
 		else if ($this->begins_with($str_file, "logout")) 
 		{
-			require_once 'access_api.php';
+			$this->loadFiles();
 			
 			$str_website_url = plugin_config_get('joomla_website');
 			$str_logout_link = plugin_config_get('joomla_logout_link');
@@ -78,13 +73,22 @@ class Joomla3LoginPlugin extends MantisPlugin
 		}		
 		else if ($this->begins_with($str_file, "account_"))
 		{
-			require_once 'access_api.php';
+			$this->loadFiles();
 			
 			$str_website_url = plugin_config_get('joomla_website');
 			$str_manage_account_link = plugin_config_get('joomla_manage_account_link');
 			
 			print_header_redirect($str_website_url . $str_manage_account_link, true, false, true );
 		}		
+	}
+	
+	private function loadFiles()
+	{
+		require_once 'access_api.php';
+		require_once 'print_api.php';
+		require_once 'project_api.php';
+		require_once 'user_api.php';
+		require_once 'authentication_api.php';
 	}
 	
 	function display_manage_menu_item()
