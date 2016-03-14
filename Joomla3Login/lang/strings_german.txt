@@ -1,0 +1,8 @@
+<?php
+
+$s_plugin_Joomla3Login_configuration = "Konfiguration";
+$s_plugin_Joomla3Login_joomla_website = "Joomla 3.x Webseite Url";
+$s_plugin_Joomla3Login_joomla_login_link = "Link zu der Login Seite";
+$s_plugin_Joomla3Login_joomla_logout_link = "Link zu der Abmeldungs Seite";
+$s_plugin_Joomla3Login_joomla_manage_account_link = "Link zu der Joomla angemeldeten Benutzerverwaltungs Seite";
+$s_plugin_Joomla3Login_return_var_text = "Verwenden Sie [RETURN] in dem Link um den Return-URL anzugeben";

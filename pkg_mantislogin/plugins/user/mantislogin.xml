@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="user" method="upgrade">
+	<name>User - Mantis Login</name>
+	<version>2.6</version>
+	<creationDate>March 2016</creationDate>
+	<author>Thomas Munz</author>
+	<authorEmail>thomas.munz@sanhist-planspiel.at</authorEmail>
+	<authorUrl>http://www.sanhist-planspiel.at</authorUrl>
+	<copyright>2009-2016 Thomas Munz</copyright>
+	<license>GNU General Public License v2</license>
+	<description>Mantis Auto-Login. This plugin requires that the Manthis Joomla Login plugin is installed and properly configured in Mantis.
+    </description>
+	<files>
+		<filename plugin="mantislogin">mantislogin.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="mantis_absolutpath" type="text" size ="60" default="" label="Mantis Path" description="The absolut path of the Mantis root folder on the Server" />
+				<field name="mantis_domain" type="text" size ="60" default="" label="Mantis URL" description="The absolut URL where Mantis is running" />
+				<field name="mantis_usernameerrormessage" type="textarea" class="inputbox" rows="3" cols="30" label="Username heck Error Message" description="What Errormessage should be displayed, if the Mantis Username validates checks fail (Like invalid chars)" default="Please enter a valid username." />				
+			</fieldset>
+		</fields>
+	</config>
+</extension>

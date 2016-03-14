@@ -1,0 +1,8 @@
+<?php
+
+$s_plugin_Joomla3Login_configuration = "Configuration";
+$s_plugin_Joomla3Login_joomla_website = "Joomla 3.x Website Url";
+$s_plugin_Joomla3Login_joomla_login_link = "Link to Login Page";
+$s_plugin_Joomla3Login_joomla_logout_link = "Link to Logout Page";
+$s_plugin_Joomla3Login_joomla_manage_account_link = "Link to the Account Managment Site in Joomla";
+$s_plugin_Joomla3Login_return_var_text = "Put [RETURN] into the link to attach the returning URL";

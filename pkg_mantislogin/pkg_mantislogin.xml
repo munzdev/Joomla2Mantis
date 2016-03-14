@@ -1,0 +1,16 @@
+ <?xml version="1.0" encoding="UTF-8" ?>
+ <extension type="package" version="1.6" method="upgrade">
+ <name>Mantis Login Package</name>
+ <author>Thomas Munz</author>
+ <creationDate>March 2016</creationDate>
+ <packagename>mantislogin</packagename>
+ <version>1.0.0</version>
+ <url>http://www.sanhist-planspiel.at/</url>
+ <packager>Thomas Munz<</packager>
+ <packagerurl>http://www.sanhist-planspiel.at/</packagerurl>
+ <description>Mantis Auto-Login. This plugin requires that the Manthis Joomla Login plugin is installed and properly configured in Mantis.</description>
+ <files folder="packages">   
+   <file type="plugin" id="mantislogin" group="user">plg_user_mantislogin.zip</file>
+   <file type="plugin" id="mantislogin" group="system">plg_system_mantislogin.zip</file>
+ </files>
+ </extension>
