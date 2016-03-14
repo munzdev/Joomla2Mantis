@@ -1,14 +1,10 @@
 <?php
 /**
- * File: mediawikilogin.php
- * Op basis van: docuwiki bridge
- * Version: 2.4
- * Author docuwiki bridge: Tim Hewitt 
- * Aangepast door: Harold Prins
- * Email: info@haroldprins.nl
- * Website: http://www.haroldprins.nl
- * Plugin for automatic Mediawiki login with Joomla.
- * Requires the Joomla authorization module for Mediawiki
+ * File: mantislogin.php
+ * Version: 1.0
+ * Author: Thomas Munz 
+ * Website: https://github.com/munzili/Joomla2Mantis
+ * Plugin for automatic mantis login with Joomla.
  */
 
 // Check to ensure this file is included in Joomla!
